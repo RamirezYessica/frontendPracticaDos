@@ -16,6 +16,12 @@ export async function addProductToCart(
   sessionId: string,
   productId: number
 ) {
+
+  // if (productId ===2){
+  //   throw new Error ("Error simulado: producto no disponible");
+  // }
+  
+  // `${API_URL}/cart/items-error`
   const res = await fetch(`${API_URL}/cart/items`, {
     method: "POST",
     headers: {
